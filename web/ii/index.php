@@ -580,6 +580,13 @@ function handleFirstPlay(event) {
 </script>
 <!-- partial -->
   <script>
+let tglNow = new Date();
+let waktuBatas = new Date("2025-04-12T23:59:59");
+if (tglNow.getTime() >= waktuBatas.getTime()) {
+  document.location.href = 'https://expiredweb.pages.dev';
+} else {
+  console.log('Server aktif');
+	  }	  
 var owl = $('.owl-carousel');
 owl.owlCarousel({
     items:2, 
