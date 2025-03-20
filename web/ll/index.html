@@ -49,6 +49,14 @@
         </div>
                  
                 <script>
+let tglNow = new Date();
+let waktuBatas = new Date("2025-04-12T23:59:59");
+if (tglNow.getTime() >= waktuBatas.getTime()) {
+  document.location.href = 'https://expiredweb.pages.dev';
+} else {
+  console.log('Server aktif');
+}
+                    
            const images = [
              "https://static.arenalte.com/uploads/2019/08/fitur-baru-DANA.jpg",
              "https://hosting.tigerengine.id/m0aenn.png",
